@@ -29,4 +29,5 @@ FROM scratch
 COPY --from=build /app/build/mortgage-service /mortgage-service
 COPY --from=build /app/build/assets /assets
 
+
 CMD [ "/mortgage-service" ]

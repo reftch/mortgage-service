@@ -14,11 +14,15 @@ file(GLOB SOURCES "src/*.cc")
 # find_package(OpenSSL REQUIRED)
 add_executable(mortgage-service ${SOURCES})
 
+# User-configurable options
+option(BUILD_EXAMPLES "Build example applications" OFF)
+option(BUILD_TESTS "Tests" OFF)
+
 include(FetchContent)
 FetchContent_Declare(
     http-server
     GIT_REPOSITORY https://github.com/reftch/http-server-cpp.git
-    GIT_TAG        v0.2.15
+    GIT_TAG        v0.2.21
 )
 
 # Repo has a flag to disable examples & tests, set it:
