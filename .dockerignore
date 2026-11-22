@@ -1,2 +1,4 @@
-apps/api/target
+apps/api/mortgage-service
 apps/web/node_modules
+apps/web/dist
+apps/api/assets/ui

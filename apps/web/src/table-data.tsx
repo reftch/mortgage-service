@@ -16,7 +16,7 @@ const headers = [
 ];
 
 export default function TableData(props: TableDataProps) {
-  const bodyRef = createRef();
+  const bodyRef = createRef<HTMLDivElement>();
 
   useEffect(() => {
     if (bodyRef.current) {
